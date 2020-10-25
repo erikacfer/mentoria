@@ -5,8 +5,9 @@ require_relative '..\lib\jogada.rb'
 class ResultadoSuper
   def conferir_resultado(numeros_apostados, numeros_sorteados)
     count = 0
-    numeros_apostados.each do |numero|
-      if numeros_sorteados.include? (numero)
+
+    Array(numeros_apostados).each do |numero|
+      if Array(numeros_sorteados).include? (numero)
         count += 1
       end
     end
