@@ -57,10 +57,12 @@ class Objeto
 
     puts "*********** Ação de pausa do usuário rgaspar:"
     puts obj_a.select { |user1| user1["user"] == "rgaspar" }.select { |action1| action1["action"] == "paused" }
+    puts obj_a.select { |user1| user1["user"] == "rgaspar" and user1["action"] == "paused" }
     puts "*********** Total de registros do usuário pbocucci:"
     puts obj_a.count { |user1| user1["user"] == "pbocucci" }
     puts "*********** Registros com user nulo:"
     puts obj_a.select { |user1| user1["user"] == "" }
+    puts obj_a.any? { |user1| user1["user"] == "" }
   end
 
   def objeto_b
@@ -243,6 +245,7 @@ class Objeto
     puts obj_c[0]["trainingScheduleAthleteEvent"].select { |status1| status1["status"] == "Pending" }
     puts "*********** Rregistros de night no dia 29:"
     puts obj_c[0]["trainingScheduleAthleteEvent"].select { |partsOfDay1| partsOfDay1["partsOfDay"] == "Night" }.select { |day1| day1["day"] == 29 }
+    puts obj_c[0]["trainingScheduleAthleteEvent"].select { |partsOfDay1| partsOfDay1["partsOfDay"] == "Night" and partsOfDay1["day"] == 29 }
     puts "*********** Rregistros do dia 25:"
     puts obj_c[0]["trainingScheduleAthleteEvent"].any? { |day1| day1["day"] == 25 }
     puts obj_c[0]["trainingScheduleAthleteEvent"].find { |day1| day1["day"] == 25 }
