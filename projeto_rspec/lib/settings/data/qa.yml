@@ -1,0 +1,11 @@
+urls:
+  fenix: https://testedt04.qa.directtalk.com.br
+  bot_api: http://bot.qa.directtalk.com.br/1.0/api
+users:
+  fenix_user: 02taadmdt
+  fenix_password: Abc001!
+  token_A2A: DT-A2A-Token 379c1238ee46d7a6886c5ce5870e52cceb9be1aa
+data_site:
+  tenant_id: 9961f2fa-8c43-4407-999a-37425ba6dc2b
+  department_id: 939141db-b74f-49f3-b79a-409264f4d211
+  id_chat: 222602849CA4003174B4

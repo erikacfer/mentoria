@@ -1,0 +1,7 @@
+Description: >
+  If you are going to run these tests on your machine or in QA environment you need to update the data below.
+  NOTE THESE VALUES SHOULD NOT BE COMMITED!!
+  Exemplo 
+    environment qa
+
+environment: prod #environment
